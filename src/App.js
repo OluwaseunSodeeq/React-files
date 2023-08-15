@@ -25,11 +25,12 @@ function App() {
   //   // props.onAddData(userData);
   // };
 
+  // using empty tag<> / <React.Fragment> / <Fragment> to return adjacent of element
   return (
-    <div>
+    <>
       <AddUsers onSaveUsersData={saveUserDataHandler} />
       <UserList users={userList} />
-    </div>
+    </>
   );
 }
 
